@@ -8,7 +8,7 @@ function App() {
 
   return (
     <StoreProvider>
-      <h1>Welcome!</h1>
+      <h1>Add your duties!</h1>
       <Form />
       <ToDoList />
     </StoreProvider>    
