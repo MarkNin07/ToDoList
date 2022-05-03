@@ -5,11 +5,9 @@ const ToDoList = () => {
 
     const {state, dispatch} = useContext(Store)
 
-    console.log(state);
-
     return (
         <div>
-            <h1>Adele</h1>
+            <h1>Here's the form</h1>
             <ul>
                 {state.listOfNotes.map(note => {
                     return <li style ={note.done ? {textDecoration: 'line-through'} :{}} key={note.id}>

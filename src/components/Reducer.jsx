@@ -3,6 +3,7 @@
 const Reducer = (state, action) => {
     switch(action.type) {
         case 'add-note':
+            console.log("adding note");
             return state
         case 'remove-note':
             return state
