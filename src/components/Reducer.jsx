@@ -1,0 +1,1 @@
+//This component will help us to manage the global state
