@@ -1,11 +1,12 @@
 import './App.css'
+import StoreProvider from './components/StoreProvider'
 
 function App() {
 
   return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
+    <StoreProvider>
+      <h1>Hello from outside</h1>
+    </StoreProvider>    
   )
 }
 
