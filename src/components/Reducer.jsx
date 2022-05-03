@@ -20,7 +20,11 @@ const Reducer = (state, action) => {
         case 'remove-note':
             return state
         case 'update-note':
-            return state
+            console.log(action.payload);
+            const newListOfNotes = state.listOfNotes.filter(note => note.id !== action.payload.id)
+            const newListOfNotesWithModification = [...newListOfNotes, action.payload]
+            const newStateModifiedCheckbox = {...state, listOfNotes: newListOfNotesWithModification}
+            return newStateModifiedCheckbox
         
     }
 }
