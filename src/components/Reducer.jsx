@@ -2,6 +2,13 @@
 
 const Reducer = (state, action) => {
     switch(action.type) {
+        case 'get-notes':
+            const stateWithAllTheNotes = {
+                ...state, 
+                listOfNotes: action.payload
+            }
+            return stateWithAllTheNotes
+
         case 'add-note':
             console.log("adding note");
             const newNote = {
